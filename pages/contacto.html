@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="shortcut icon" href="../IMG/logoPatitas.svg" />
+    <title>Contacto</title>
+  </head>
+
+  <body>
+    <!-- menú de navegación siempre va al comienzo-->
+    <div class="gridContainerContacto">
+      <div class="header">
+        <nav>
+          <a href="../index.html"
+            ><img class="logo" src="../img/logoPatitas.svg" alt="Logo Patitas"
+          /></a>
+    
+          <ul class="navItems">
+            <li>
+              <a href="./sobrenosotros.html">Sobre nosotros</a>
+            </li>
+            <li>
+              <a href="./enadopcion.html">En adopción</a>
+            </li>
+            <li>
+              <a href="./formaparte.html">Formá parte</a>
+            </li>
+            <li>
+              <a href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="./donaciones.html" class="botonDonar">Hacer donación</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="contacto">
+        <div class="textContacto">
+          <h2>¿Tenés <span class="tituloAmarillo">dudas</span>?</h2>
+          <h2>Charlá con nosotros.</h2>
+        </div>
+        <div class="form">
+          <form action="#" method="get" class="form">
+            <input
+              type="text"
+              placeholder="Nombre y Apellido"
+              name="Nombre"
+              required
+            />
+            <input type="email" placeholder="Email" name="Email" required />
+            <input
+              type="text"
+              placeholder="Teléfono de Contacto"
+              name="Telefono"
+              required
+            />
+      
+            <!-- menu desplegable (solo para formulario) -->
+            <select name="Consulta">
+              <option value="-">Seleccioná tu consulta</option>
+              <option value="Dudas">Preguntas sobre adopción</option>
+              <option value="estado">En qué estado está mi formulario</option>
+              <option value="Unirme">Quiero formar parte de Patitas</option>
+              <option value="Devolucion">
+                No puedo continuar teniendo a mi mascota
+              </option>
+              <option value="Otras">Otras consultas</option>
+            </select>
+      
+            <!-- Text Area -->
+            <textarea
+              name="Comentario"
+              cols="39"
+              rows="10"
+              placeholder="Comentario"
+            ></textarea>
+            <!-- Enviar -->
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <ul>
+          <li>Patitas al Rescate - 2022</li>
+          <li>Todos los derechos reservados a Patitas al Rescate.</li>
+          <a href="https://www.instagram.com/patitasalrescate/" target="_blank"
+            >Seguinos en instragram</a
+          >
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

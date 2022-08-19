@@ -1,0 +1,1095 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "mulish";
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54.1799px;
+  line-height: 68px;
+  align-items: center;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*  GRID CONTAINER INDEX */
+
+.gridContainerIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 803px 660px 660px 660px 100px;
+  grid-template-areas:
+    "header"
+    "section1"
+    "section2"
+    "section3"
+    "section4"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: #f8f8f8;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row;
+}
+
+.logo {
+  position: fixed;
+  top: 0px;
+  width: 66px;
+  height: 66.68px;
+  left: 56px;
+  margin-top: 15px;
+  z-index: 3;
+}
+
+.navItems {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-evenly;
+  top: 0%;
+  padding: 38px;
+  margin-right: 214px;
+  right: 0;
+  z-index: 4;
+}
+
+.navItems li a {
+  padding: 15px;
+}
+
+.section1 {
+  grid-area: section1;
+  background-color: bisque;
+  align-content: center;
+  overflow-y: hidden;
+}
+
+.section1 img {
+  width: 100%;
+  height: 820px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.fondoPrincipal {
+  z-index: -1;
+}
+
+.tituloAmarillo {
+  font-weight: 700;
+  color: #ffd803;
+}
+
+.tituloNegro {
+  position: absolute;
+  width: 484px;
+  height: 136px;
+  top: 346px;
+  left: 56px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 68px;
+  align-items: center;
+  color: black;
+  z-index: 2;
+}
+
+.botonDonar {
+  position: fixed;
+  width: 172px;
+  height: 47px;
+  right: 56px;
+  top: 0%;
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16.8px;
+  padding: 12px 21.39px;
+  background: #ffd803;
+  border: 2px solid #ffd803;
+  border-radius: 30px;
+  z-index: 3;
+}
+
+.botonDonar:hover {
+  border: 2px solid #000000;
+  transition: 0.3s;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "section2Text section2Img";
+  grid-area: section2;
+  align-content: center;
+  overflow-y: hidden;
+  align-items: center;
+}
+
+.section2Img img {
+  width: 100%;
+  height: 820px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.section2Text {
+  grid-area: section2Text;
+  display: flex;
+  flex-flow: column;
+  flex-flow: column;
+  height: 660px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.section2Img {
+  grid-area: section2Img;
+  background-color: #f8f8f8;
+}
+
+.segundoHeader {
+  position: relative;
+  width: 511px;
+  height: 168px;
+  margin-left: 56px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  color: #000000;
+}
+
+.botonesAdopcion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  left: 56px;
+  width: 488px;
+}
+
+.botonGatito {
+  display: flex;
+  width: 152px;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 3.38624px solid #ffd803;
+  border-radius: 31.164px;
+}
+
+.botonGatito:hover {
+  background-color: #ffd803;
+  transition: 0.3s;
+}
+
+.iconoGatito {
+  width: 53px;
+  height: 53px;
+  padding: 10px 5px 10px 0px;
+}
+
+.textoGatito {
+  width: 62.05px;
+  height: 25px;
+  font-weight: 700;
+  font-size: 20.3175px;
+  text-align: center;
+}
+
+.botonPerrito {
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 3.38624px solid #ffd803;
+  border-radius: 31.164px;
+}
+
+.botonPerrito:hover {
+  background-color: #ffd803;
+  transition: 0.3s;
+}
+
+.iconoPerrito {
+  width: 53px;
+  height: 53px;
+  padding: 10px 5px 10px 0px;
+}
+
+.textoPerrito {
+  width: 62.05px;
+  height: 25px;
+  font-weight: 700;
+  font-size: 20.3175px;
+  text-align: center;
+  margin: 0px 7px 0px 0px;
+}
+
+.verTodos {
+  height: 59.65px;
+  font-weight: 700;
+  font-size: 20.3175px;
+  text-align: center;
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 3.38624px solid #ffd803;
+  border-radius: 31.164px;
+}
+
+.verTodos:hover {
+  background-color: #ffd803;
+  transition: 0.3s;
+}
+
+.section3 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "section3Img section3Text";
+  grid-area: section3;
+  align-content: center;
+  overflow-y: hidden;
+}
+
+.section3Img img {
+  width: 100%;
+  height: 820px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.section3Img {
+  grid-area: section3Img;
+  background-color: #f8f8f8;
+}
+
+.tercerFondo {
+  position: absolute;
+  width: 640px;
+  height: 766.98px;
+  top: 1597.46px;
+  margin-left: 0%;
+}
+
+.botonDonarPatita:hover {
+  background-color: #ffd803;
+  transition: 0.3s;
+}
+
+.section3Text {
+  grid-area: section3Text;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.botonDonarPatita {
+  width: 212px;
+  height: 50px;
+  padding: 12.46px 24.39px;
+  font-weight: 700;
+  font-size: 16.93px;
+  text-align: center;
+  border: 3.386px solid #ffd803;
+  border-radius: 47.164px;
+  margin-right: 56px;
+}
+
+.tercerHeader {
+  width: 545.89px;
+  height: 155px;
+  font-weight: 600;
+  font-size: 54.18px;
+  line-height: 68px;
+  text-align: right;
+  margin-right: 56px;
+}
+
+.section4 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "section4Text section4Img";
+  grid-area: section4;
+  align-content: center;
+  overflow-y: hidden;
+  align-items: center;
+}
+
+.section4Img img {
+  width: 100%;
+  height: 820px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.section4Text {
+  grid-area: section4Text;
+}
+
+.section4Img {
+  grid-area: section4Img;
+  background-color: #f8f8f8;
+}
+
+.cuartoFondo {
+  position: absolute;
+  left: 640px;
+  top: 2362px;
+}
+
+.cuartoHeader {
+  position: relative;
+  width: 540px;
+  height: 136px;
+  left: 56px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54.1799px;
+  line-height: 68px;
+  align-items: center;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #ffd803;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 56px;
+}
+
+/* SOBRE NOSOTROS */
+
+.tituloSobreNosotros {
+  position: absolute;
+  top: 140px;
+  left: 56px;
+}
+
+.blob {
+  position: relative;
+  left: 516px;
+  top: 180px;
+  z-index: -2;
+}
+
+.blobDos {
+  position: absolute;
+  left: 0px;
+  top: 1836px;
+  z-index: -2;
+}
+
+.contenedor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  width: 660px;
+  height: 311px;
+  left: 530px;
+  top: -675px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-content: space-around;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.contenedorDos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 613px;
+  height: 263px;
+  left: 112px;
+  top: -556px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-content: space-around;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.contenedorTres {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  width: 660px;
+  height: 358px;
+  left: 530px;
+  top: -410px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-content: space-around;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.contenedorCuatro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 613px;
+  height: 339px;
+  left: 112px;
+  top: -269px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-content: space-around;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.contenedorCinco {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  width: 660px;
+  height: 390px;
+  left: 530px;
+  top: -114px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-content: space-around;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.contenedorSeis {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 613px;
+  height: 385px;
+  left: 112px;
+  top: 24px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-content: space-around;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* EN ADOPCION */
+
+.positionAdopcion {
+  position: absolute;
+  width: 326px;
+  height: 68px;
+  left: 477px;
+  top: 134px;
+  z-index: 2;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 1280px;
+  height: 564px;
+  left: 0px;
+  top: 210px;
+  overflow-x: scroll;
+}
+
+.eclipseUno {
+  position: absolute;
+  width: 1280px;
+  height: 164px;
+  left: 0px;
+  top: 128px;
+}
+
+.eclipseDos {
+  position: absolute;
+  width: 1280px;
+  height: 164px;
+  left: 0px;
+  top: 695px;
+}
+
+.botonAdoptar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 127px;
+  height: 47px;
+  left: 590px;
+  top: 175px;
+  padding: 8.46561px 25.3968px;
+  border: 3.38624px solid #ffd803;
+  background: #f8f8f8;
+  border-radius: 25px;
+}
+
+.botonAdoptar:hover {
+  background: #ffd803;
+  transition: 0.3s;
+}
+
+/* GRID CONTAINER FORMA PARTE */
+
+.gridContainerAyudar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 550px 100px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "ayudar"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.ayudar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "text formulario";
+  grid-area: ayudar;
+  justify-items: center;
+  align-items: center;
+}
+
+.textFormaParte {
+  grid-area: textFormaParte;
+  display: flex;
+  grid-area: text;
+  flex-flow: column;
+  height: 423px;
+  flex-direction: column;
+  align-items: center;
+  width: 594px;
+  padding: 40px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.formulario {
+  grid-area: formulario;
+}
+
+.formulario2 {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 480px;
+  flex-direction: column;
+}
+
+/* GRID CONTAINER CONTACTO */
+
+.gridContainerContacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 550px 100px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "contacto"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "text form";
+  grid-area: contacto;
+}
+
+.textContacto {
+  text-align: center;
+  grid-area: text;
+  display: flex;
+  height: 550px;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.form {
+  grid-area: form;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 40px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* GRIDS DONACIONES */
+
+.gridContainerDonaciones {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 550px 100px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "donation"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.donation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "text information";
+  grid-area: donation;
+  align-items: center;
+  justify-items: center;
+}
+
+.textDonaciones {
+  text-align: center;
+  grid-area: text;
+  display: flex;
+  height: 550px;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.information {
+  grid-area: information;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 13px;
+  width: 476px;
+  background: white;
+  height: 468px;
+  align-items: center;
+  border: 3px dashed #ffd803;
+  border-radius: 30px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #ffd803;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 56px;
+}
+
+.botonDonacion {
+  font-size: 20px;
+  line-height: 25px;
+  padding: 12px 22px;
+  gap: 10px;
+  background: #ffffff;
+  border: 3px solid #ffd803;
+  border-radius: 30px;
+}
+
+.botonDonacion:hover {
+  background-color: #ffd803;
+  transition: 0.3s;
+}
+
+.botonContacto {
+  width: 163px;
+  height: 55px;
+  padding: 12px 20px;
+  gap: 10px;
+  font-size: 20px;
+  line-height: 25px;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  border: 3px solid #ffd803;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.botonContacto:hover {
+  background-color: #ffd803;
+  transition: 0.3s;
+}
+
+@media (max-width: 900px) {
+  .gridContainerDonaciones {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1200px 100px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "donation"
+      "footer";
+  }
+
+  .donation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "text" "information";
+    grid-area: donation;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .textDonaciones {
+    text-align: center;
+    grid-area: text;
+    display: flex;
+    height: 558px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 13px;
+  }
+
+  .information {
+    grid-area: information;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 35px;
+    margin: 0px 30px 30px 30px;
+    width: 472px;
+    background: white;
+    height: 478px;
+    align-items: center;
+    border: 3px dashed #ffd803;
+    border-radius: 30px;
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: #ffd803;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 56px;
+  }
+
+  .navItems {
+    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    top: 0%;
+    padding: 38px;
+    margin-left: 113px;
+    z-index: 3;
+  }
+
+  .navItems li a {
+    padding: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navItems {
+    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    top: 0%;
+    padding: 38px;
+    margin-left: 167px;
+    z-index: 3;
+  }
+
+  .donation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "text" "information";
+    grid-area: donation;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .gridContainerIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 820px 820px 820px 820px 100px;
+    grid-template-areas:
+      "header"
+      "section1"
+      "section2"
+      "section3"
+      "section4"
+      "footer";
+  }
+
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "section2";
+    align-content: center;
+    overflow-y: hidden;
+  }
+
+  .section2Img img {
+    width: 100%;
+    height: 920px;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "section3";
+    align-content: center;
+    overflow-y: hidden;
+  }
+
+  .section3Img img {
+    width: 100%;
+    height: 920px;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+
+  .section4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "section4";
+    align-content: center;
+    overflow-y: hidden;
+  }
+
+  .section4Img img {
+    width: 100%;
+    height: 920px;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: #ffd803;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 56px;
+  }
+}
+
+@media (max-width: 700px) {
+  .gridContainerDonaciones {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 200px 1200px 100px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "donation"
+      "footer";
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+  }
+
+  .botonDonar {
+    position: fixed;
+    width: 196px;
+    height: 54px;
+    right: 23px;
+    top: 101px;
+    margin-top: 41px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 12px 21.39px;
+    background: #ffd803;
+    border: 2px solid #ffd803;
+    border-radius: 30px;
+    font-size: 20px;
+    z-index: 3;
+  }
+
+  .navItems {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    top: 130px;
+    height: 76px;
+    padding: 8px;
+    width: 300px;
+    margin-left: 10px;
+    z-index: 3;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .logo {
+    position: fixed;
+    top: 7px;
+    width: 80px;
+    height: 80.47999999999999px;
+    left: 234px;
+    margin-top: 16px;
+    z-index: 3;
+  }
+
+  .parrafoDonaciones {
+    font-size: 20px;
+  }
+
+  .parrafoRecibimos {
+    font-size: 20px;
+  }
+
+  .textDonaciones {
+    text-align: center;
+    grid-area: text;
+    display: flex;
+    height: 705px;
+    width: 529px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 62px;
+  }
+
+  .information {
+    grid-area: information;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 35px;
+    margin: 0px 30px 30px 30px;
+    width: 472px;
+    background: white;
+    height: 478px;
+    align-items: center;
+    border: 3px dashed #ffd803;
+    border-radius: 30px;
+  }
+}
