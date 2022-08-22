@@ -1,131 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="stylesheet" href="./CSS/style.css" />
-  <link rel="stylesheet" href="">
-  <link rel="shortcut icon" href="../IMG/logoPatitas.svg" />
-
-</head>
-<body>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../IMG/logoPatitas.svg" />
+  </head>
+  <body>
     <div class="gridContainerIndex">
-        <div class="header">
-            <nav>
-                <a href="./index.html"
-                  ><img class="logo" src="./IMG/logoPatitas.svg" alt="Logo Patitas"
-                /></a>
-                <ul class="navItems">
-                  <li>
-                    <a href="./Pages/sobrenosotros.html" class="sobreNosotros"
-                      >Sobre nosotros</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./Pages/enadopcion.html">En adopción</a>
-                  </li>
-                  <li>
-                    <a href="./Pages/formaparte.html">Formá parte</a>
-                  </li>
-                  <li>
-                    <a href="./Pages/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="./Pages/donaciones.html" class="botonDonar"
-                      >Hacer donación</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-        </div>
-        <!-- SECTION ONE -->
-        <div class="section1">
-            <img src="./img/PrimerFondo.jpg" alt="PrimerFondo">
-            <h2 class="tituloNegro wow animate__animated animate__fadeInLeft">
-                <span class="tituloAmarillo">Dejate adoptar</span>, por una patita.
-              </h2>
-        </div>
-        <!-- SECTION TWO -->
-        <div class="section2">
-            <div class="section2Text">
-                <h2 class="segundoHeader wow animate__animated animate__fadeInLeft">
-                    Encontrá a tu nuevo <span class="tituloAmarillo">mejor amigo.</span>
-                  </h2>
-            
-                  <div class="botonesAdopcion">
-                    <section class="botonGatito">
-                      <a href="./pages/enadopcion.html"
-                        ><img
-                          src="./IMG/iconoGatito.svg"
-                          alt="Icono Gatito"
-                          class="iconoGatito"
-                      /></a>
-                      <a href="./Pages/enadopcion.html" class="textoGatito">Gatos</a>
-                    </section>
-                    <section class="botonPerrito">
-                      <a href="./pages/enadopcion.html"
-                        ><img
-                          src="./IMG/iconoPerrito.svg"
-                          alt="icono perrito"
-                          class="iconoPerrito"
-                      /></a>
-                      <a href="./Pages/enadopcion.html" class="textoPerrito">Perros</a>
-                    </section>
-                    <a href="./Pages/enadopcion.html" class="verTodos">Ver todos</a>
-                  </div>
-              </div>
-              <div class="section2Img">
-                <img src="./img/SegundoFondo.jpg" alt="SegundoFondo">
-              </div>
-        </div>
-        <!-- SECTION THREE -->
-        <div class="section3">
-          <div class="section3Img">
-            <img src="./img/TercerFondo.jpg" alt="TercerFondo">
-          </div>
-          <div class="section3Text">
-            <h2 class="tercerHeader wow animate__animated animate__fadeInRight">
-                <span class="tituloAmarillo">Todo suma</span>, tu ayuda hace la
-                diferencia.
-              </h2>
-              <a href="./Pages/hacerdonacion.html" class="botonDonarPatita"
-                >Donar a una Patita</a
-              >
-          </div>
-        </div>
-        <!-- SECTION FOUR -->
-        <div class="section4">
-          <div class="section4Text">
-            <h2 class="cuartoHeader wow animate__animated animate__fadeInLeft">
-                Hay muchas formas <span class="tituloAmarillo">de ayudar</span>.
-              </h2>
-          </div>
-          <div class="section4Img">
-            <img src="./img/CuartoFondo.jpg" alt="cuartoFondo">
-          </div>
-        </div>
-        <!-- FOOTER -->
-        <div class="footer">
-            <ul>
-                <li>Patitas al Rescate - 2022</li>
-                <li>Todos los derechos reservados a Patitas al Rescate.</li>
-                <a href="https://www.instagram.com/patitasalrescate/" target="_blank"
-                  >Seguinos en instragram</a
-                >
+      <div class="header">
+        <nav class="navbar fixed-top navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"
+              ><img src="./img/logoPatitas.svg" alt="logoPatitas"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./pages/sobrenosotros.html"
+                    >Sobre Nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/enadopcion.html"
+                    >En adopción</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="./pages/formaparte.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Formá Parte
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./pages/donaciones.html"
+                        >Doná</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/formaparte.html"
+                        >Transitá</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/formaparte.html"
+                        >Fotografiá</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/formaparte.html"
+                        >Trasladá</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/formaparte.html"
+                        >Difundí</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/enadopcion.html"
+                        >Adoptá</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn py-2 px-3 shadow"
+                    style="border-radius: 30px; background-color:#ffd803; margin-left: 20px;"
+                    href="./pages/donaciones.html"
+                    >Hacer Donación</a
+                  >
+                </li>
               </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- SECTION ONE -->
+      <div class="section1">
+        <img src="./img/PrimerFondo.jpg" alt="PrimerFondo" />
+        <h2 class="tituloNegro wow animate__animated animate__fadeInLeft">
+          <span class="tituloAmarillo">Dejate adoptar</span>, por una patita.
+        </h2>
+      </div>
+      <!-- SECTION TWO -->
+      <div class="section2">
+        <div class="section2Text">
+          <h2 class="segundoHeader wow animate__animated animate__fadeInLeft">
+            Encontrá a tu nuevo <span class="tituloAmarillo">mejor amigo.</span>
+          </h2>
+
+          <div class="botonesAdopcion">
+            <section class="botonGatito">
+              <a href="./pages/enadopcion.html"
+                ><img
+                  src="./IMG/iconoGatito.svg"
+                  alt="Icono Gatito"
+                  class="iconoGatito"
+              /></a>
+              <a href="./Pages/enadopcion.html" class="textoGatito">Gatos</a>
+            </section>
+            <section class="botonPerrito">
+              <a href="./pages/enadopcion.html"
+                ><img
+                  src="./IMG/iconoPerrito.svg"
+                  alt="icono perrito"
+                  class="iconoPerrito"
+              /></a>
+              <a href="./Pages/enadopcion.html" class="textoPerrito">Perros</a>
+            </section>
+            <a href="./Pages/enadopcion.html" class="verTodos">Ver todos</a>
+          </div>
+        </div>
+        <div class="section2Img">
+          <img src="./img/SegundoFondo.jpg" alt="SegundoFondo" />
         </div>
       </div>
-      <script src="js/wow.min.js"></script>
-      <script>
-        new WOW().init();
-      </script>
-</body>
+      <!-- SECTION THREE -->
+      <div class="section3">
+        <div class="section3Img">
+          <img src="./img/TercerFondo.jpg" alt="TercerFondo" />
+        </div>
+        <div class="section3Text">
+          <h2 class="tercerHeader wow animate__animated animate__fadeInRight">
+            <span class="tituloAmarillo">Todo suma</span>, tu ayuda hace la
+            diferencia.
+          </h2>
+          <a href="./Pages/hacerdonacion.html" class="botonDonarPatita"
+            >Donar a una Patita</a
+          >
+        </div>
+      </div>
+      <!-- SECTION FOUR -->
+      <div class="section4">
+        <div class="section4Text">
+          <h2 class="cuartoHeader wow animate__animated animate__fadeInLeft">
+            Hay muchas formas <span class="tituloAmarillo">de ayudar</span>.
+          </h2>
+        </div>
+        <div class="section4Img">
+          <img src="./img/CuartoFondo.jpg" alt="cuartoFondo" />
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="footer">
+        <ul>
+          <li>Patitas al Rescate - 2022</li>
+          <li>Todos los derechos reservados a Patitas al Rescate.</li>
+          <a href="https://www.instagram.com/patitasalrescate/" target="_blank"
+            >Seguinos en instragram</a
+          >
+        </ul>
+      </div>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>

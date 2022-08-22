@@ -6,38 +6,67 @@
 }
 
 h2 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 54.1799px;
-  line-height: 68px;
-  align-items: center;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 54.1799px !important;
+  line-height: 68px !important;
+  align-items: center !important;
 }
 
 h3 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
+  font-weight: 700 !important ;
+  font-size: 40px !important;
+  line-height: 50px !important;
 }
 
 body {
-  background-color: #f8f8f8;
+  background-color: #f8f8f8 !important;
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: none
 }
 
 a {
-  text-decoration: none;
-  color: black;
+  color: black !important;
+  text-decoration: none !important;
 }
+
+.header {
+  font-weight: 500;
+  font-size: 15px;
+  z-index: 20;
+}
+
+.navbar-brand img {
+  width: 40px;
+  height: 40.89px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  padding-right: 56px;
+}
+
+.navbar-brand {
+  padding-left: 56px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: flex-end;
+}
+
 
 /*  GRID CONTAINER INDEX */
 
 .gridContainerIndex {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 803px 660px 660px 660px 100px;
+  grid-template-rows: 0px 803px 660px 660px 660px 100px;
   grid-template-areas:
     "header"
     "section1"
@@ -60,8 +89,8 @@ a {
 .logo {
   position: fixed;
   top: 0px;
-  width: 66px;
-  height: 66.68px;
+  width: 49px;
+  height: 49.48px;
   left: 56px;
   margin-top: 15px;
   z-index: 3;
@@ -768,7 +797,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 13px;
+  padding: 23px;
+  margin: 30px;
   width: 476px;
   background: white;
   height: 468px;
@@ -822,11 +852,11 @@ a {
   transition: 0.3s;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .gridContainerDonaciones {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1200px 100px;
+    grid-template-rows: 100px 1072px 100px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -846,14 +876,14 @@ a {
   }
 
   .textDonaciones {
-    text-align: center;
-    grid-area: text;
-    display: flex;
-    height: 558px;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 13px;
+      text-align: center;
+      grid-area: text;
+      display: flex;
+      height: 558px;
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 65px;
   }
 
   .information {
@@ -922,7 +952,7 @@ a {
   .gridContainerIndex {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 820px 820px 820px 820px 100px;
+    grid-template-rows: 0px 820px 820px 820px 820px 100px;
     grid-template-areas:
       "header"
       "section1"
@@ -998,7 +1028,7 @@ a {
   .gridContainerDonaciones {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 200px 1200px 100px;
+    grid-template-rows: 100px 1215px 100px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
