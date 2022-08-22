@@ -4,20 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="shortcut icon" href="../IMG/logoPatitas.svg" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-    crossorigin="anonymous"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../img/logoPatitas.svg" />
     <title>Formá Parte</title>
   </head>
 
   <body>
     <div class="gridContainerAyudar">
-  
       <div class="header">
         <nav class="navbar fixed-top navbar-expand-lg bg-light">
           <div class="container-fluid">
@@ -60,7 +63,7 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="./formaparte.html">Doná</a>
+                      <a class="dropdown-item" href="./donaciones.html">Doná</a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="./formaparte.html"
@@ -96,14 +99,19 @@
                 <li class="nav-item">
                   <a
                     class="nav-link btn py-2 px-3 shadow"
-                    style="border-radius: 30px; background-color:#ffd803; margin-left: 20px;"
+                    style="
+                      border-radius: 30px;
+                      background-color: #ffd803;
+                      margin-left: 20px;
+                    "
                     href="./donaciones.html"
                     >Hacer Donación</a
                   >
                 </li>
               </ul>
             </div>
-          </nav>
+          </div>
+        </nav>
       </div>
 
       <div class="ayudar">
@@ -122,17 +130,16 @@
               name="Nombre"
               required
             />
-          
+
             <input type="email" placeholder="Email" name="Email" required />
-          
+
             <input
               type="text"
               placeholder="Teléfono de Contacto"
               name="Telefono"
               required
             />
-          
-      
+
             <!-- menu desplegable (solo para formulario) -->
             <select name="Consulta">
               <option value="-">Seleccioná tu forma de ayudar</option>
@@ -141,7 +148,7 @@
               <option value="traslado">Traslado</option>
               <option value="Otras">Otras formas de ayudar</option>
             </select>
-      
+
             <!-- Text Area -->
             <textarea
               name="Comentario"
@@ -149,7 +156,7 @@
               rows="10"
               placeholder="Comentario"
             ></textarea>
-      
+
             <!-- Enviar -->
             <input type="submit" value="Enviar" />
             <input type="reset" value="Borrar" />
@@ -168,9 +175,9 @@
       </div>
     </div>
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"
-  ></script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
