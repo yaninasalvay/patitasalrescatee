@@ -1,7 +1,7 @@
 * {
   margin: 0%;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   font-family: "mulish" !important;
 }
 
@@ -390,6 +390,13 @@ a {
 
 .section4Text {
   grid-area: section4Text;
+    display: flex;
+    flex-flow: column;
+    flex-flow: column;
+    height: 660px;
+    align-items: flex-start;
+    justify-content: center;
+    left: 56px;
 }
 
 .section4Img {
@@ -405,12 +412,7 @@ a {
 
 .cuartoHeader {
   position: relative;
-  left: 56px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 54.1799px;
-  line-height: 68px;
-  align-items: center;
+  margin-left: 56px;
 }
 
 .footer {
@@ -437,6 +439,8 @@ a {
   left: 516px;
   top: 180px;
   z-index: -2;
+  object-fit: cover;
+  vertical-align: middle;
 }
 
 .blobDos {
@@ -450,8 +454,11 @@ a {
   margin-bottom: 30px;
 }
 
-.positionContenedor {
+.positionContenedorRight {
 display: flex;
+justify-content: flex-end;
+margin-right: 3rem;
+margin-left: 3rem;
 }
 
 .contenedor {
@@ -461,8 +468,6 @@ display: flex;
   align-items: flex-end;
   text-align: right;
   width: 660px;
-  height: 311px;
-  left: 530px;
   top: -675px;
   padding: 40px;
   background: #ffffff;
@@ -474,6 +479,13 @@ display: flex;
   line-height: 25px;
 }
 
+.positionContenedorLeft {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  } 
+
 .contenedorDos {
   position: relative;
   display: flex;
@@ -481,8 +493,6 @@ display: flex;
   align-items: flex-start;
   text-align: left;
   width: 613px;
-  height: 263px;
-  left: 112px;
   top: -556px;
   padding: 40px;
   background: #ffffff;
@@ -501,8 +511,6 @@ display: flex;
   align-items: flex-end;
   text-align: right;
   width: 660px;
-  height: 358px;
-  left: 530px;
   top: -410px;
   padding: 40px;
   background: #ffffff;
@@ -521,8 +529,6 @@ display: flex;
   align-items: flex-start;
   text-align: left;
   width: 613px;
-  height: 339px;
-  left: 112px;
   top: -269px;
   padding: 40px;
   background: #ffffff;
@@ -541,8 +547,6 @@ display: flex;
   align-items: flex-end;
   text-align: right;
   width: 660px;
-  height: 390px;
-  left: 530px;
   top: -114px;
   padding: 40px;
   background: #ffffff;
@@ -560,9 +564,7 @@ display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  width: 613px;
-  height: 385px;
-  left: 112px;
+  width: 613px; 
   top: 24px;
   padding: 40px;
   background: #ffffff;
