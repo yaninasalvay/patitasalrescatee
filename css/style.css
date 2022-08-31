@@ -95,22 +95,6 @@ a {
   z-index: 3;
 }
 
-.navItems {
-  position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
-  justify-content: space-evenly;
-  top: 0%;
-  padding: 38px;
-  margin-right: 214px;
-  right: 0;
-  z-index: 4;
-}
-
-.navItems li a {
-  padding: 15px;
-}
 
 .section1 {
   grid-area: section1;
@@ -358,6 +342,7 @@ a {
   border: 3.386px solid #ffd803;
   border-radius: 47.164px;
   margin-right: 56px;
+  background: #f8f8f8;
 }
 
 .tercerHeader {
@@ -422,7 +407,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 56px;
 }
 
 /* SOBRE NOSOTROS */
@@ -468,7 +452,7 @@ margin-left: 3rem;
   align-items: flex-end;
   text-align: right;
   width: 660px;
-  top: -675px;
+  top: 250px;
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
@@ -493,7 +477,7 @@ margin-left: 3rem;
   align-items: flex-start;
   text-align: left;
   width: 613px;
-  top: -556px;
+  top: 376px;
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
@@ -511,7 +495,7 @@ margin-left: 3rem;
   align-items: flex-end;
   text-align: right;
   width: 660px;
-  top: -410px;
+  top: 544px;
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
@@ -529,7 +513,7 @@ margin-left: 3rem;
   align-items: flex-start;
   text-align: left;
   width: 613px;
-  top: -269px;
+  top: 729px;
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
@@ -547,7 +531,7 @@ margin-left: 3rem;
   align-items: flex-end;
   text-align: right;
   width: 660px;
-  top: -114px;
+  top: 927px;
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
@@ -565,7 +549,7 @@ margin-left: 3rem;
   align-items: flex-start;
   text-align: left;
   width: 613px; 
-  top: 24px;
+  top: 1071px;
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
@@ -574,6 +558,18 @@ margin-left: 3rem;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
+}
+
+.footerSobreNosotros {
+  grid-area: footer;
+  background-color: #ffd803;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3rem;
+  top: 1139px;
+  flex-direction: column;
 }
 
 /* EN ADOPCION */
@@ -689,6 +685,17 @@ margin-left: 3rem;
   padding: 20px;
   border-radius: 72px;
 }
+
+.footerAdopcion {
+    background-color: #ffd803;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    top: 24rem;
+}
+
 
 /* GRID CONTAINER FORMA PARTE */
 
@@ -881,7 +888,7 @@ padding: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 56px;
+  padding: 2rem;
 }
 
 .botonDonacion {
@@ -975,24 +982,8 @@ padding: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 56px;
+    padding: 2rem;
   }
-
-  .navItems {
-    position: fixed;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    top: 0%;
-    padding: 38px;
-    margin-left: 113px;
-    z-index: 3;
-  }
-
-  .navItems li a {
-    padding: 7px;
-  }
-
 
   .gridContainerAyudar {
     display: grid;
@@ -1054,16 +1045,6 @@ padding: 20px;
 }
 
 @media (max-width: 768px) {
-  .navItems {
-    position: fixed;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    top: 0%;
-    padding: 38px;
-    margin-left: 167px;
-    z-index: 3;
-  }
 
   .donation {
     display: grid;
@@ -1146,10 +1127,73 @@ padding: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 56px;
-    margin-top: 30px;
+    padding: 2rem;
   }
 
+  .tituloNegro {
+    color: #ffffff;
+    left: 2rem;
+    right: 2rem;
+  }
+
+  .segundoHeader {
+    color: #ffffff;
+    left: -2rem;
+    right: 2rem;
+  }
+
+  .tercerHeader {
+    color: #ffffff;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  .cuartoHeader{
+    color: #ffffff;
+    left: -2rem;
+    right: 2rem;
+  }
+
+  .botonesAdopcion {
+    left: 2rem;
+    right: 2rem;
+}
+
+.botonDonarPatita {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
+  .section2Text {
+    grid-area: section2Text;
+    display: flex;
+    flex-flow: column;
+    height: 660px;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.section3Text {
+  grid-area: section3Text;
+  display: flex;
+  position: relative;
+  flex-flow: column;
+  top: 221px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.section4Text {
+  grid-area: section4Text;
+  display: flex;
+  flex-flow: column;
+  flex-flow: column;
+  height: 660px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  left: 56px;
+}
 }
 
 
@@ -1191,22 +1235,6 @@ padding: 20px;
     z-index: 3;
   }
 
-  .navItems {
-    position: fixed;
-    display: flex;
-    justify-content: space-evenly;
-    top: 130px;
-    height: 76px;
-    padding: 8px;
-    width: 300px;
-    margin-left: 10px;
-    z-index: 3;
-    text-align: center;
-    flex-wrap: wrap;
-    align-content: space-around;
-    font-size: 20px;
-    align-items: center;
-  }
 
   .logo {
     position: fixed;
@@ -1252,4 +1280,6 @@ padding: 20px;
     border: 3px dashed #ffd803;
     border-radius: 30px;
   }
+
+
 }
