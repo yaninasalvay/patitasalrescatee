@@ -342,7 +342,7 @@ a {
   border: 3.386px solid #ffd803;
   border-radius: 47.164px;
   margin-right: 56px;
-  background: #f8f8f8;
+  background: #ffffff;
 }
 
 .tercerHeader {
@@ -452,7 +452,7 @@ margin-left: 3rem;
   align-items: flex-end;
   text-align: right;
   width: 660px;
-  top: 250px;
+  top: 300px;
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
@@ -477,7 +477,7 @@ margin-left: 3rem;
   align-items: flex-start;
   text-align: left;
   width: 613px;
-  top: 376px;
+  top: 476px;
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
@@ -495,7 +495,7 @@ margin-left: 3rem;
   align-items: flex-end;
   text-align: right;
   width: 660px;
-  top: 544px;
+  top: 644px;
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
@@ -513,7 +513,7 @@ margin-left: 3rem;
   align-items: flex-start;
   text-align: left;
   width: 613px;
-  top: 729px;
+  top: 829px;
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
@@ -531,7 +531,7 @@ margin-left: 3rem;
   align-items: flex-end;
   text-align: right;
   width: 660px;
-  top: 927px;
+  top: 1027px;
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
@@ -549,7 +549,7 @@ margin-left: 3rem;
   align-items: flex-start;
   text-align: left;
   width: 613px; 
-  top: 1071px;
+  top: 1171px;
   padding: 40px;
   background: #ffffff;
   border-radius: 25px;
@@ -568,7 +568,7 @@ margin-left: 3rem;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 3rem;
-  top: 1139px;
+  top: 1240px;
   flex-direction: column;
 }
 
@@ -1040,6 +1040,10 @@ padding: 20px;
     align-items: center;
     justify-content: space-evenly;
     padding: 30px;
+}
+
+.navbar-brand {
+  padding-left: 2rem;
 }
 
 }
